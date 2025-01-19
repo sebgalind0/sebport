@@ -87,7 +87,7 @@ export const DATA = {
       href: "https://ssventures.com",
       location: "Remote",
       title: "Founder & CEO",
-      logoUrl: "/ssventures.jpg",
+      logoUrl: "/ssventures.png",
       start: "February 2023",
       end: "April 2024",
       description:
