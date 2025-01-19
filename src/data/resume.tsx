@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "I was born in Bolivia and started my first business at 12, organizing Yu-Gi-Oh card tournaments. Since then, I have lived on three continents, visited 17 countries, moved to the U.S. in 2015 as an F1 student, and founded 3 tech startups.",
   summary:
-    "I am the father of one beautiful baby boy, the husband of a beautiful, supportive partner, and the founder and CEO of Jex. We are building the first AI agent to help international students in the U.S. get hired. As a former international student, I know the pain firsthand. The journey did not start here. Back in 2020, we launched a mobile app that grew to ~80k users in two years, started a staffing agency that reached $2M in revenue within one year, and invested in a few tech startups. Outside of work, I have a passion for quantum physics and exploring the nature of reality. ",
+    "I am the father of one beautiful baby boy, the husband of a beautiful, supportive partner, and the founder and CEO of Jex. We are building the first AI agent to help international students in the U.S. get hired. As a former international student, I know the pain firsthand. The journey did not start here. Back in 2020, we launched a mobile app that grew to ~80k users in two years, started a staffing agency that reached $2M in revenue within one year, and invested in a few tech startups. Outside of work, I have a passion for quantum physics and exploring the nature of reality.. ",
   avatarUrl: "/me.png",
   skills: [
     "JavaScript",
@@ -87,7 +87,7 @@ export const DATA = {
       href: "https://ssventures.com",
       location: "Remote",
       title: "Founder & CEO",
-      logoUrl: "/ssventures.jpg",
+      logoUrl: "/ssventures1.png",
       start: "February 2023",
       end: "April 2024",
       description:
