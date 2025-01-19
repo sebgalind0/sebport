@@ -11,6 +11,7 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import HyperText from "@/components/ui/hyper-text";
+import { Space } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -135,16 +136,13 @@ export default function Page() {
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
               {DATA.bookshelf.map((project, id) => (
                 <BlurFade
-                  key={project.title + project.dates}
+                  key={project.title}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
                 >
                   <HackathonCard
                     title={project.title}
                     description={project.description}
-                    location={project.location}
-                    dates={project.dates}
                     image={project.image}
-                    links={project.links}
                   />
                 </BlurFade>
               ))}
@@ -163,7 +161,7 @@ export default function Page() {
                 <HyperText>Sebastian Galindo</HyperText>
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Let's connect! Whether it’s a question, a collaboration idea, or just a quick chat, feel free to reach out. Shoot me a message on{" "}
+                Got a question? Shoot me a message on{" "}
                 <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
