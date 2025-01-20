@@ -23,6 +23,8 @@ interface HyperTextProps extends MotionProps {
   animateOnHover?: boolean;
   /** Custom character set for scramble effect. Defaults to uppercase alphabet */
   characterSet?: CharacterSet;
+  /** Offset for the animation */
+  yOffset?: number;
 }
 
 const DEFAULT_CHARACTER_SET = Object.freeze(
@@ -40,6 +42,7 @@ export default function HyperText({
   startOnView = true,
   animateOnHover = true,
   characterSet = DEFAULT_CHARACTER_SET,
+  yOffset = 4,
   ...props
 }: HyperTextProps) {
   const MotionComponent = motion.create(Component, {
