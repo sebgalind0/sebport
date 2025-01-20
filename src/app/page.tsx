@@ -166,9 +166,16 @@ export default function Page() {
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
-                  X 
-                </Link>{""}
-                 or drop me an email, and I will get back to you as soon as I can.
+                  X
+                </Link>{" "}
+                or{" "}
+                <Link
+                  href={`mailto:${DATA.contact.email}`}
+                  className="text-blue-500 hover:underline"
+                >
+                  drop me an email
+                </Link>
+                , and I will get back to you as soon as I can.
               </p>
             </div>
           </BlurFade>
