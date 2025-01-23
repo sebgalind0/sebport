@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import Link from "next/link";
 
 export const DATA = {
   name: "Seb Galindo",
@@ -28,7 +29,7 @@ export const DATA = {
     "React",
     "Next.js",
     "TailwindCSS",
-    "Shadcn UI",
+    
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -39,30 +40,32 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://x.com/sebgalindo1",
+        url: "https://github.com/sebgalind0",
         icon: Icons.github,
-
+        target: "_blank",
+        rel: "noopener noreferrer",
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/sebgalindo/",
         icon: Icons.linkedin,
-
+        target: "_blank",
+        rel: "noopener noreferrer",
         navbar: true,
       },
       X: {
         name: "X",
         url: "https://x.com/sebgalindo1",
         icon: Icons.x,
-
+        target: "_blank",
+        rel: "noopener noreferrer",
         navbar: true,
       },
       email: {
         name: "Send Email",
         url: "#",
         icon: Icons.email,
-
         navbar: false,
       },
     },
