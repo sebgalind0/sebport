@@ -12,6 +12,9 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import HyperText from "@/components/ui/hyper-text";
 import { Space } from "lucide-react";
+import { TypingAnimation } from "@/components/ui/typing-animation";
+import { WordRotate } from "@/components/ui/word-rotate";
+
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -26,7 +29,23 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={
+                  <div className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                    <span className="block text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                      <span className="inline-flex items-center gap-2">
+                        <span className="inline-block">
+                          <WordRotate 
+                            words={["Hi", "Hola", "Nǐ hǎo", "Oi"]} 
+                            duration={2000}
+                          />
+                        </span>
+                        <span>
+                          , I&apos;m {DATA.name.split(" ")[0]} 👋
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                }
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
@@ -121,7 +140,7 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Bookshelf
+                  Library
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   <HyperText>Favorite Books</HyperText>

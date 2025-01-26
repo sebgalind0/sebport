@@ -1,5 +1,7 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { TypingAnimation } from "@/components/ui/typing-animation";
+
 
 export const DATA = {
   name: "Seb Galindo",
@@ -28,7 +30,6 @@ export const DATA = {
     "React",
     "Next.js",
     "TailwindCSS",
-    "Shadcn UI",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -39,7 +40,7 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://x.com/sebgalindo1",
+        url: "https://github.com/sebgalind0",
         icon: Icons.github,
 
         navbar: true,

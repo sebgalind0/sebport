@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 interface BlurFadeTextProps {
-  text: string;
+  text: string | React.ReactNode;
   className?: string;
   delay?: number;
   yOffset?: number;
